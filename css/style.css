@@ -22,7 +22,24 @@ main .mainnav{
   float: left;
   width: 250px;
   height: 100%;
-  background-color: rgba(0,0,0,.8);
+  background-color: black;
+  display: flex;
+  padding: 1% 1%;
+  flex-direction: column;
+}
+
+.mainnav img{
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-start;
+  height: 40px;
+}
+.menumain{
+  margin-top: 30px;
+}
+
+.menumain img{
+  height: 20px;
 }
 
 /* parte home */
@@ -31,19 +48,20 @@ main .home{
   float: left;
   width: calc(100% - 250px);
   height: 100%;
-  background-color: rgb(83, 83, 83);
-
+  background-color: #1b2632;
 }
+
 .upgrade{
   display: flex;
   height: 100px;
-  background-color: #282828;
+  background-color: #000d1a;
   align-items: center;
   justify-content: flex-end;
+  padding: 0 1%;
 
 }
 .button{
-  background-color: #282828;
+  background-color: #000d1a;
   border: solid 1px white;
   border-radius: 25px;
   color: white;
@@ -52,14 +70,18 @@ main .home{
   text-decoration: none;
   cursor: pointer;
   position: absolute;
+  transition: .3s;
 }
 .button:hover{
   background-color: white;
   color: #282828;
+  transform: scale(1.1);
 }
 /* parte navhome */
 .songmenu{
   padding: 0 1%;
+  overflow: auto;
+  height: calc(100% - 100px);
 }
 .navhome ul{
   display: flex;
@@ -69,9 +91,13 @@ main .home{
 }
 .navhome ul a{
   padding-right: 25px;
-  color: white;
+  color: #b3b3b3;
   text-decoration: none;
 }
+.navhome ul li a:hover{
+  color: white;
+}
+
 
 /* parte recently played */
 #songs h1{
@@ -87,6 +113,33 @@ main .home{
 #songs .immagini img{
   height: 200px;
 }
+.immagini .container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.immagini .container:hover .overlay{
+  opacity: 1;
+}
+.text{
+  display: flex;
+  color: white;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 #songs .immagini ul li h2{
   padding-top: 10px;
   font-size: 15px;
@@ -99,6 +152,8 @@ main .home{
   font-size: 12px;
   color: #b3b3b3;
 }
+
+
 /* songs 2 */
 #songs2 h1{
   padding-top: 30px;
@@ -116,7 +171,9 @@ main .home{
 }
 #songs2 .immagini img{
   height: 200px;
-  margin-right: 10px;
+}
+#songs2 .immagini ul li{
+  margin-right: 30px;
 }
 #songs2 .immagini ul li h2{
   padding-top: 10px;
@@ -147,14 +204,18 @@ main .home{
   list-style-type: none;
 }
 #songs3 .immagini img{
+  border-radius: 50%;
   height: 200px;
-  margin-right: 10px;
+}
+#songs3 .immagini ul li{
+  margin-right: 30px;
 }
 #songs3 .immagini ul li h2{
   padding-top: 10px;
   font-size: 15px;
   text-align: center;
   color: white;
+  padding-bottom: 30px;
 }
 #songs3 .immagini ul li p{
   padding-top: 10px;
@@ -162,13 +223,27 @@ main .home{
   font-size: 12px;
   color: white;
 }
-
-
+.overlay2{
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.immagini .container:hover .overlay2{
+  opacity: 1;
+}
 
 
 
 footer{
   height: 90px;
-  background-color: #282828;
+  background-color:  #404040;
   border-top: 1px solid #000;
 }
