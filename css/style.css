@@ -14,7 +14,6 @@
 
 main{
   height: calc(100vh - 90px);
-  overflow: hidden;
 }
 
 /* parte nav */
@@ -26,22 +25,72 @@ main .mainnav{
   display: flex;
   padding: 1% 1%;
   flex-direction: column;
-}
-
-.mainnav img{
-  display: flex;
-  justify-content: flex-start;
-  align-self: flex-start;
-  height: 40px;
+  justify-content: space-between;
 }
 .menumain{
-  margin-top: 30px;
+  margin-top: 20px;
+  display: table;
 }
-
+.mainnav img{
+  height: 40px;
+}
 .menumain img{
-  height: 20px;
+  height: 25px;
+}
+.menumain ul li span{
+  font-size: 15px;
+  color: #b3b3b3;
+  padding-left: 7px;
+  display:table-cell;
+  vertical-align:middle;
+}
+.menumain ul li span:hover{
+  color: white;
+}
+.menumain ul li{
+  padding-bottom: 10px;
+}
+.menumain ul li a{
+  text-decoration: none;
+}
+.inferiore ul li{
+  color: white;
+}
+.menumain h2{
+  margin-top: 20px;
+  color: white;
+  font-size: 14px;
+}
+.cubo{
+  margin-top: 10px;
+  height: 35px;
+  width: 35px;
+  background-color: #b3b3b3;
+  display: flex;
+}
+.cubo i{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  color: black;
 }
 
+.cubo:hover{
+  background-color: white;
+}
+.menumain a{
+  text-decoration: none;
+}
+.menumain span{
+  color: white;
+}
+.menumain p{
+  color: #b3b3b3;
+}
+.menumain p:hover {
+  color: white;
+}
 /* parte home */
 
 main .home{
@@ -130,6 +179,7 @@ main .home{
 }
 .immagini .container:hover .overlay{
   opacity: 1;
+  cursor: pointer;
 }
 .text{
   display: flex;
