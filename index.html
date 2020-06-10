@@ -24,10 +24,14 @@
                 <li><a href="#"><img src="img/libreria.svg" alt=""><span>La tua libreria</span></a></li>
               </ul>
               <h2>PLAYLIST</h2>
-              <a href="#"><div class="cubo">
-                <i class="fas fa-plus"></i>
-              </div></a>
-              <span>Crea la tua Plailyst</span>
+              <div class="table">
+                <a href="#"><div class="cubo">
+                  <i class="fas fa-plus"></i>
+                </div></a>
+                <a href="#"><span>Crea la tua Plailyst</span></a>
+                
+              </div>
+
               <ul>
                 <li><a href="#"><p>Nome Playlist</p></a></li>
                 <li><a href="#"><p>Nome Playlist</p></a></li>
@@ -41,8 +45,9 @@
           </div>
           <div class="inferiore">
             <ul>
-              <li>hshdfgd</li>
-              <li>gdsfgdgd</li>
+              <li><a href="#"><img src="img/download.svg" alt=""><span>Installa app</span></a> </li>
+              <span id="riga"></span>
+              <li><a href="#"><img src="img/profile.svg" alt=""><span><strong>John Doe</strong> </span></a></li>
             </ul>
           </div>
         </nav>
@@ -54,7 +59,7 @@
           <div class="songmenu">
             <nav class="navhome">
               <ul>
-                <li><a href="#">IN EVIDENZA</a></li>
+                <li><a href="#">IN EVIDENZA <span></span> </a></li>
                 <li><a href="#">PODCAST</a></li>
                 <li><a href="#">CLASSIFICHE</a></li>
                 <li><a href="#">GENERI E MOOD</a></li>
@@ -191,7 +196,45 @@
 
       <!-- parte footer -->
       <footer>
+        <div class="player">
+          <div class="sinistra">
+            <img src="img/player_left.jpg" alt="">
+            <span><strong>Sinister</strong><br><p>Brano Nome</p></span>
+            <img src="" alt="">
 
+              <a href="#"><i class="far fa-heart"></i></a>
+              <a href="#"><i class="far fa-folder"></i></a>
+
+          </div>
+          <div class="centrale">
+            <div id="player">
+              <a href="#"><i class="fas fa-random"></i></a>
+              <a href="#"><i class="fas fa-step-backward"></i></a>
+              <a id="tastoplay" href="#"><i class="far fa-play-circle"></i></a>
+              <a href="#"><i class="fas fa-step-forward"></i></i></a>
+              <a href="#"><i class="fas fa-redo-alt"></i></a>
+            </div>
+            <div id="barra">
+              <p>0:25</p>
+              <div id="meter">
+                <div id="mybar">
+
+                </div>
+              </div>
+              <p>4:35</p>
+            </div>
+          </div>
+          <div class="destra">
+            <a href="#"><i class="fas fa-list-ul"></i></a>
+            <a href="#"><i class="fas fa-desktop"></i></a>
+            <a href="#"><i class="fas fa-volume-up"></i></a>
+            <div id="meter2">
+              <div id="mybar2">
+
+              </div>
+            </div>
+          </div>
+        </div>
       </footer>
 
     </div>

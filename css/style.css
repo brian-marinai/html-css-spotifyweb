@@ -32,13 +32,14 @@ main .mainnav{
   display: table;
 }
 .mainnav img{
-  height: 40px;
+  height: 35px;
 }
+
 .menumain img{
-  height: 25px;
+  height: 20px;
 }
 .menumain ul li span{
-  font-size: 15px;
+  font-size: 13px;
   color: #b3b3b3;
   padding-left: 7px;
   display:table-cell;
@@ -47,6 +48,20 @@ main .mainnav{
 .menumain ul li span:hover{
   color: white;
 }
+
+.table{
+  display: table;
+}
+.table a{
+  display: table-cell;
+}
+.table span{
+  padding-left: 10px;
+}
+.table span:hover{
+  color: #1db954;
+}
+
 .menumain ul li{
   padding-bottom: 10px;
 }
@@ -60,6 +75,9 @@ main .mainnav{
   margin-top: 20px;
   color: white;
   font-size: 14px;
+}
+.menumain p{
+  font-size: 13px;
 }
 .cubo{
   margin-top: 10px;
@@ -77,11 +95,15 @@ main .mainnav{
 }
 
 .cubo:hover{
-  background-color: white;
+  background-color: #1db954;
 }
 .menumain a{
   text-decoration: none;
 }
+.menumain{
+  list-style-type: none;
+}
+
 .menumain span{
   color: white;
 }
@@ -91,6 +113,42 @@ main .mainnav{
 .menumain p:hover {
   color: white;
 }
+
+.inferiore ul{
+  width: 100%;
+  list-style-type: none;
+}
+.inferiore ul li a{
+  text-decoration: none;
+}
+.inferiore ul li a span{
+  color: #b3b3b3;
+  display:table-cell;
+  vertical-align:middle;
+  padding-left: 5px;
+}
+.inferiore img{
+  height: 15px;
+}
+.inferiore{
+  display: table;
+}
+#riga{
+  display:inline-block;
+  height: 1px;
+  width: 200px;
+  background-color: white;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.inferiore ul li a span:hover{
+  color: white;
+}
+
+
+
+
 /* parte home */
 
 main .home{
@@ -122,8 +180,8 @@ main .home{
   transition: .3s;
 }
 .button:hover{
-  background-color: white;
-  color: #282828;
+  background-color: #1db954;
+  color: white;
   transform: scale(1.1);
 }
 /* parte navhome */
@@ -139,9 +197,17 @@ main .home{
   padding-top: 15px;
 }
 .navhome ul a{
+  font-size: 13px;
   padding-right: 25px;
   color: #b3b3b3;
   text-decoration: none;
+}
+.navhome ul li a span{
+  margin-left: 25px;
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: #1db954;
 }
 .navhome ul li a:hover{
   color: white;
@@ -156,13 +222,17 @@ main .home{
 #songs .immagini ul{
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 #songs .immagini img{
+  display: flex;
+  flex-wrap: wrap;
   height: 200px;
 }
 .immagini .container{
+  margin-right: 20px;
   position: relative;
 }
 .overlay{
@@ -291,9 +361,142 @@ main .home{
 }
 
 
-
+/* parte footer */
 footer{
+  position: absolute;
+  z-index: 999;
+  padding: 0 .5%;
   height: 90px;
   background-color:  #404040;
   border-top: 1px solid #000;
+}
+.player{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+/* parte sinistra del player */
+.sinistra img{
+  height: 50px;
+}
+.sinistra{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+.sinistra span{
+  font-size: 12px;
+  color: white;
+}
+.sinistra p{
+  display: block;
+  color: #b3b3b3;
+}
+.sinistra i{
+  color: #b3b3b3;
+  margin-right: 5px;
+}
+.sinistra i:hover{
+  color: white;
+}
+
+
+/* parte centrale del player */
+.centrale{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+#player{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  align-items: center;
+}
+#player a{
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+}
+#player a:hover{
+  color: #b3b3b3;
+}
+#player #tastoplay{
+  font-size: 26px;
+}
+
+#barra{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 110%;
+}
+
+#barra p{
+  color: white;
+  font-size: 10px;
+}
+
+#meter{
+  width: 100%;
+  background-color: #b3b3b3;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+#mybar{
+  width: 20%;
+  height: 4px;
+  background-color: white;
+  border-radius: 30px;
+}
+#mybar:hover{
+  background-color: #1db954;
+}
+
+/* parte destra del player */
+.destra{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+
+.destra a{
+  display: inline-block;
+  color: white;
+  font-size: 15px;
+  margin-left: 5%;
+}
+#meter2{
+  margin-left: 10px;
+  width: 50%;
+  background-color: #b3b3b3;
+  border-radius: 30px;
+}
+#mybar2{
+  width: 20%;
+  height: 4px;
+  background-color: white;
+  border-radius: 30px;
+}
+#mybar2:hover{
+  background-color: #1db954;
+}
+
+
+
+
+
+.destra{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
 }
