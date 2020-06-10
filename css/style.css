@@ -50,6 +50,7 @@ main .mainnav{
 }
 
 .table{
+  margin-bottom: 10px;
   display: table;
 }
 .table a{
