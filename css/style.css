@@ -224,7 +224,10 @@ main .home{
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
+<<<<<<< HEAD
   justify-content: flex-start;
+=======
+>>>>>>> master
 }
 #songs .immagini img{
   display: flex;
@@ -363,8 +366,11 @@ main .home{
 
 /* parte footer */
 footer{
+<<<<<<< HEAD
   position: absolute;
   z-index: 999;
+=======
+>>>>>>> master
   padding: 0 .5%;
   height: 90px;
   background-color:  #404040;
