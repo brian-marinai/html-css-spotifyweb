@@ -34,7 +34,11 @@ main .mainnav{
 .mainnav img{
   height: 35px;
 }
-
+@media screen and (max-width: 700px) {
+  .mainnav{
+    width: 40px;
+  }
+}
 .menumain img{
   height: 20px;
 }
@@ -146,7 +150,13 @@ main .mainnav{
 .inferiore ul li a span:hover{
   color: white;
 }
-
+.inferiore ul li h2{
+  color: #b3b3b3;
+  display:table-cell;
+  vertical-align:middle;
+  font-size: 15px;
+  padding-left: 10px;
+}
 
 
 
@@ -225,11 +235,9 @@ main .home{
   display: flex;
   list-style-type: none;
   flex-wrap: wrap;
-<<<<<<< HEAD
   justify-content: flex-start;
-=======
->>>>>>> master
 }
+
 #songs .immagini img{
   display: flex;
   flex-wrap: wrap;
@@ -367,11 +375,8 @@ main .home{
 
 /* parte footer */
 footer{
-<<<<<<< HEAD
-  position: absolute;
+  position: relative;
   z-index: 999;
-=======
->>>>>>> master
   padding: 0 .5%;
   height: 90px;
   background-color:  #404040;
