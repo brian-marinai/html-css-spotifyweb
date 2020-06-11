@@ -35,10 +35,35 @@ main .mainnav{
   height: 35px;
 }
 @media screen and (max-width: 700px) {
-  .mainnav{
+  main .mainnav{
     width: 40px;
   }
+  main .menumain ul li span{
+    display: none;
+  }
+  main .mainnav img{
+    display: none;
+  }
+  main .menumain ul li a img{
+    display: block;
+    display: flex;
+    justify-content: center;
+    padding-left: 3px;
+  }
+  main .menumain h2{
+    display: none;
+  }
+  main .menumain .table{
+    display: none;
+  }
+  main .menumain ul:last-of-type{
+    display: none;
+  }
+  main .inferiore{
+    display: none;
+  }
 }
+
 .menumain img{
   height: 20px;
 }
@@ -167,6 +192,11 @@ main .home{
   width: calc(100% - 250px);
   height: 100%;
   background-color: #1b2632;
+}
+@media screen and (max-width: 700px){
+  main .home{
+    width: calc(100% - 40px);
+  }
 }
 
 .upgrade{
